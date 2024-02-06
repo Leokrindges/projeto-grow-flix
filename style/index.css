@@ -24,7 +24,8 @@
 }
 
 .separator_line {
-    color: #B6060F;
+    color: white;
+    border: 2px solid;
 }
 
 
