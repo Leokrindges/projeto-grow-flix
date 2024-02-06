@@ -1,3 +1,27 @@
-.image-logo {
-    
+.image_logo {
+    width: 6.5%;
 }
+
+.banner_background {
+    background: url(../assets/images/banner-initial.png) center top/cover no-repeat fixed;
+}
+
+.button_default {
+    background-color: #B6060F;
+    border-color: #B6060F;
+    color: white;
+    border: 1px solid #B6060F;
+    border-radius: 8px;
+    width: 175px;
+    height: 75px;
+    font-size: x-large;
+}
+
+.button_default:hover {
+    background-color: #E50914;
+    background-color: #E50914;
+    color: white;
+}
+
+
+
