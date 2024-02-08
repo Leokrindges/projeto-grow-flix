@@ -1,0 +1,62 @@
+.banner_growcast {
+    min-height: 750px;
+}
+
+.titles-home{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.titles-home:hover {
+    color: #FF6E0E;
+}
+
+
+.text_color_nav{
+    color: #BFC1C8;
+}
+
+.banner_background {
+    background: url(../assets/images/growcast-01.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: white;
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: transparent;
+    background-color: transparent;
+    border: var(--bs-border-width) solid #BFC1C8;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+/* .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image:  #BFC1C8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+} */
