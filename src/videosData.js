@@ -6,7 +6,7 @@ const videos = [
                 link: "https://www.youtube.com/embed/aJ-HZuLcKeA?si=lGln1M_V53Fx3Max",
                 image: "https://img.youtube.com/vi/aJ-HZuLcKeA/sddefault.jpg"
             },
-            {
+            { 
                 title: "Growcast #01 | As profissões do futuro",
                 link: "https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn",
                 image: "https://img.youtube.com/vi/7OWT3lfHYvE/sddefault.jpg"

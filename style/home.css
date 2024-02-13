@@ -50,13 +50,7 @@
     transition: var(--bs-navbar-toggler-transition);
 }
 
-/* .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-image:  #BFC1C8;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-} */
+#body_card {
+    cursor: pointer;;
+}
+
