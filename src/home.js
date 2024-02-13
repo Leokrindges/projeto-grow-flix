@@ -28,15 +28,15 @@ function criaELementoCard(dados_video, id_elemento) {
     var colContainer = document.getElementById(`${id_elemento}`);
 
         var colDiv = document.createElement('div');
-        colDiv.className = 'col-12 col-md-4 mt-4';
+        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center';
 
         var cardDiv = document.createElement('div');
         cardDiv.className = 'card border border-0';
-        cardDiv.style.width = '22rem';
+        cardDiv.style.width = '16rem';
 
         var img = document.createElement('img');
         img.src = `${video.image}`;
-        img.className = 'card-img-top';
+        img.className = 'card-img-top img-fluid';
         img.alt = '...';
 
         var cardBodyDiv = document.createElement('div');
