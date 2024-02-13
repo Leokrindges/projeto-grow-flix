@@ -31,7 +31,7 @@ function criaELementoCard(dados_video, id_elemento) {
         colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4 d-flex justify-content-center';
 
         var cardDiv = document.createElement('div');
-        cardDiv.className = 'card border border-0';
+        cardDiv.className = 'card border border-0 ';
         cardDiv.style.width = '16rem';
 
         var img = document.createElement('img');
@@ -57,7 +57,7 @@ function criaELementoCard(dados_video, id_elemento) {
         path2.setAttribute('d', 'M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445');
 
         var span = document.createElement('span');
-        span.textContent = 'Growcast #00 Conheça a Growdev';
+        span.textContent = `${video.title}`;
 
         // Adição dos elementos ao documento
         svg.appendChild(path1);
