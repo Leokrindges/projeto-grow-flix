@@ -2,7 +2,7 @@
     min-height: 750px;
 }
 
-.titles-home{
+.titles-home {
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -14,7 +14,7 @@
 }
 
 
-.text_color_nav{
+.text_color_nav {
     color: #BFC1C8;
 }
 
@@ -51,6 +51,53 @@
 }
 
 #body_card {
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
+.modal-content {
+    background: transparent;
+}
+
+/* .modal_movie {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.tela_cheia {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+} */
+
+@media(min-width: 576px){
+    .modal_movie {
+        height: 300px;
+    }
+    .modal {
+        --bs-modal-width: 615px;
+    }
+    
+}
+
+@media(min-width: 768px){
+    .modal_movie {
+        height: 515px;
+    }
+
+    .modal {
+        --bs-modal-width: 750px;
+    }
+}
+
+
+@media(min-width: 992px){
+    .modal_movie {
+        height: 615px;
+    }
+    .modal {
+        --bs-modal-width: 900px;
+    }
+}
