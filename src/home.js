@@ -1,5 +1,4 @@
 
-
 search_videos_growcast()
 search_videos_webinar_fluter()
 search_videos_jornada_ux_ui()
@@ -30,7 +29,7 @@ function createElementCard(data_video, id_element) {
         colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-movie mt-4 d-flex justify-content-center';
 
         var cardDiv = document.createElement('div');
-        cardDiv.className = 'card border border-0 ';
+        cardDiv.className = 'card border border border-0 ';
         cardDiv.style.width = '16rem';
 
         var img = document.createElement('img');
@@ -44,7 +43,7 @@ function createElementCard(data_video, id_element) {
         cardBodyDiv.setAttribute('data-bs-toggle', 'modal');
         cardBodyDiv.setAttribute('data-bs-target', '#modal_videos')
         cardBodyDiv.addEventListener('click', () => {
-           add_iframe_modal(video.link)
+            add_iframe_modal(video.link)
         })
 
         var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -83,7 +82,7 @@ function createElementCard(data_video, id_element) {
 }
 
 function add_iframe_modal(link_video) {
-    
+
     const modal_video = document.getElementById('link_video')
     const modal = `
     <iframe class="w-100 h-100" src="${link_video}"
@@ -92,5 +91,13 @@ function add_iframe_modal(link_video) {
     allowfullscreen></iframe>      
     `
     modal_video.innerHTML = modal
+
+}
+
+function view_video_banner() {
+    const buttonSee = document.getElementById('button_see')
+    buttonSee.setAttribute('data-bs-toggle', 'modal');
+    buttonSee.setAttribute('data-bs-target', '#modal_videos')
+    add_iframe_modal("https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn")
 
 }
