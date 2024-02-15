@@ -1,28 +1,30 @@
-procura_videos_growcast()
-procura_videos_webinar_fluter()
-procura_videos_jornada_ux_ui()
-procura_videos_diversos()
 
-function procura_videos_growcast() {
-    criaELementoCard(videos[0].growcast, 'growcast')
+
+search_videos_growcast()
+search_videos_webinar_fluter()
+search_videos_jornada_ux_ui()
+search_several_videos()
+
+function search_videos_growcast() {
+    createElementCard(videos[0].growcast, 'growcast')
 }
 
-function procura_videos_webinar_fluter() {
-    criaELementoCard(videos[0].webinaFlutter, 'webinar_fluter')
+function search_videos_webinar_fluter() {
+    createElementCard(videos[0].webinaFlutter, 'webinar_fluter')
 }
 
-function procura_videos_jornada_ux_ui() {
-    criaELementoCard(videos[0].jornadaUxUi, 'jornada_ux_ui')
+function search_videos_jornada_ux_ui() {
+    createElementCard(videos[0].jornadaUxUi, 'jornada_ux_ui')
 }
 
-function procura_videos_diversos() {
-    criaELementoCard(videos[0].diversos, 'diversos')
+function search_several_videos() {
+    createElementCard(videos[0].diversos, 'diversos')
 }
 
-function criaELementoCard(dados_video, id_elemento) {
-    dados_video.forEach(video => {
+function createElementCard(data_video, id_element) {
+    data_video.forEach(video => {
 
-        var colContainer = document.getElementById(`${id_elemento}`);
+        var colContainer = document.getElementById(`${id_element}`);
 
         var colDiv = document.createElement('div');
         colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-movie mt-4 d-flex justify-content-center';
@@ -42,7 +44,7 @@ function criaELementoCard(dados_video, id_elemento) {
         cardBodyDiv.setAttribute('data-bs-toggle', 'modal');
         cardBodyDiv.setAttribute('data-bs-target', '#modal_videos')
         cardBodyDiv.addEventListener('click', () => {
-           cria_modal(video.link)
+           add_iframe_modal(video.link)
         })
 
         var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -80,16 +82,15 @@ function criaELementoCard(dados_video, id_elemento) {
 
 }
 
-function cria_modal(link_video) {
+function add_iframe_modal(link_video) {
     
-    const modal_videos = document.getElementById('link_video')
-    // class="w-100 h-100"
+    const modal_video = document.getElementById('link_video')
     const modal = `
-    <iframe class="w-100 h-100"  src="${link_video}"
+    <iframe class="w-100 h-100" src="${link_video}"
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen></iframe>      
     `
-    modal_videos.innerHTML = modal
+    modal_video.innerHTML = modal
 
 }

@@ -103,15 +103,10 @@
     </main>
 
     <!-- MODAL -->
-    <div class="modal 100vw" id="modal_videos" tabindex="-1">
-        <div class="modal-dialog vw-100 tela_cheia modal-dialog-centered">
-            <div class="modal-content w-100 modal_movie">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close bg-white me-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="link_video">
-                    <!-- video gerado dentro do modal usando o dom -->
-                </div>
+    <div class="modal" id="modal_videos" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal_movie border-0" id="link_video">
+              <!-- Iframes com videos gerados no DOM -->
             </div>
         </div>
     </div>

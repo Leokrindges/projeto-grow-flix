@@ -57,45 +57,42 @@
 
 .modal-content {
     background: transparent;
+    border: transparent;
 }
 
-/* .modal_movie {
-    height: 100%;
-    border: 0;
-    border-radius: 0;
-}
-
-.tela_cheia {
-    width: 100vw;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-} */
-
-@media(min-width: 576px){
+@media(max-width: 576px) {
     .modal_movie {
-        height: 300px;
+        height: 250px;
     }
     .modal {
-        --bs-modal-width: 615px;
+        --bs-modal-width: 100px;
+    }
+}
+
+@media(min-width: 576px) {
+    .modal_movie {
+        height: 325px;
+    }
+    .modal {
+        --bs-modal-width: 500px;
     }
     
-}
+} 
 
 @media(min-width: 768px){
     .modal_movie {
-        height: 515px;
+        height: 415px;
     }
 
     .modal {
-        --bs-modal-width: 750px;
+        --bs-modal-width: 850px;
     }
 }
 
 
 @media(min-width: 992px){
     .modal_movie {
-        height: 615px;
+        height: 515px;
     }
     .modal {
         --bs-modal-width: 900px;
