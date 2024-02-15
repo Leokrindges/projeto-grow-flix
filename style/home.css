@@ -56,7 +56,14 @@
 
 .modal-content {
     background: transparent;
-    border: transparent;
+}
+
+.increase-card {
+    width: 16rem;
+}
+
+.increase-card:hover {
+    width: 22rem;
 }
 
 @media(max-width: 576px) {

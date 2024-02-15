@@ -1,0 +1,3 @@
+
+remover o titulo quando renderizar todos os elementos, 
+criar um evento de mouseover para quando o mouse passar no card adicionar o titulo do cards

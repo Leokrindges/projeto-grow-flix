@@ -26,7 +26,7 @@ function createElementCard(data_video, id_element) {
         var colContainer = document.getElementById(`${id_element}`);
 
         var colDiv = document.createElement('div');
-        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-movie mt-4 d-flex justify-content-center';
+        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 increase-card col-movie mt-4 d-flex justify-content-center';
 
         var cardDiv = document.createElement('div');
         cardDiv.className = 'card border border border-0 ';
