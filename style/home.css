@@ -63,7 +63,7 @@
 }
 
 .increase-card:hover {
-    width: 22rem;
+    width: 18rem;
 }
 
 .sobrepor {
@@ -77,6 +77,10 @@
     }
     .modal {
         --bs-modal-width: 100px;
+    }
+    .sobrepor{
+        position: relative;
+
     }
 }
 
