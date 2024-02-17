@@ -1,4 +1,3 @@
-
 search_videos_growcast()
 search_videos_webinar_fluter()
 search_videos_jornada_ux_ui()
@@ -26,20 +25,18 @@ function createElementCard(data_video, id_element) {
         var colContainer = document.getElementById(`${id_element}`);
 
         var colDiv = document.createElement('div');
-        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 increase-card col-movie mt-4 d-flex justify-content-center';
+        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center';
 
         var cardDiv = document.createElement('div');
-        cardDiv.className = 'card border border border-0 ';
-        cardDiv.style.width = '16rem';
+        cardDiv.className = 'card border border border-0 increase-card';
 
         var img = document.createElement('img');
         img.src = `${video.image}`;
-        img.className = 'card-img-top img-fluid';
+        img.className = 'card-img-top img-flui';
         img.alt = 'Imagem do video';
 
         var cardBodyDiv = document.createElement('div');
-        cardBodyDiv.className = 'card-body bg-black text-white';
-        cardBodyDiv.id = 'body_card';
+        cardBodyDiv.className = 'card-body bg-black text-white body_card';
         cardBodyDiv.setAttribute('data-bs-toggle', 'modal');
         cardBodyDiv.setAttribute('data-bs-target', '#modal_videos')
         cardBodyDiv.addEventListener('click', () => {
@@ -63,22 +60,28 @@ function createElementCard(data_video, id_element) {
         span.className = "ps-3"
         span.textContent = `${video.title}`;
 
-        // Adição dos elementos ao documento
         svg.appendChild(path1);
         svg.appendChild(path2);
 
-        cardBodyDiv.appendChild(svg);
-        cardBodyDiv.appendChild(span);
-
         cardDiv.appendChild(img);
-        cardDiv.appendChild(cardBodyDiv);
 
+        cardDiv.appendChild(cardBodyDiv);
         colDiv.appendChild(cardDiv);
 
         colContainer.appendChild(colDiv);
 
-    });
+        cardDiv.addEventListener('mouseenter', () => {
+            cardBodyDiv.appendChild (svg);
+            cardBodyDiv.appendChild(span);
+            cardDiv.classList.add("sobrepor")
 
+        })
+        cardDiv.addEventListener('mouseleave', () => {
+            cardBodyDiv.removeChild(svg);
+            cardBodyDiv.removeChild(span);
+            cardDiv.classList.remove("sobrepor")
+        })
+    });
 }
 
 function add_iframe_modal(link_video) {
