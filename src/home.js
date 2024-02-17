@@ -1,7 +1,17 @@
-search_videos_growcast()
-search_videos_webinar_fluter()
-search_videos_jornada_ux_ui()
-search_several_videos()
+main()
+
+function main() {
+    search_videos_growcast()
+    search_videos_webinar_fluter()
+    search_videos_jornada_ux_ui()
+    search_several_videos()
+}
+
+// REPRODUZ VIDEO DO CABEÇALHO
+const buttonSee = document.getElementById('button_see').addEventListener('click', () => {
+    console.log("entrou2");
+    add_iframe_modal("https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn")
+})
 
 function search_videos_growcast() {
     createElementCard(videos[0].growcast, 'growcast')
@@ -71,7 +81,7 @@ function createElementCard(data_video, id_element) {
         colContainer.appendChild(colDiv);
 
         cardDiv.addEventListener('mouseenter', () => {
-            cardBodyDiv.appendChild (svg);
+            cardBodyDiv.appendChild(svg);
             cardBodyDiv.appendChild(span);
             cardDiv.classList.add("sobrepor")
 
@@ -94,13 +104,5 @@ function add_iframe_modal(link_video) {
     allowfullscreen></iframe>      
     `
     modal_video.innerHTML = modal
-
-}
-
-function view_video_banner() {
-    const buttonSee = document.getElementById('button_see')
-    buttonSee.setAttribute('data-bs-toggle', 'modal');
-    buttonSee.setAttribute('data-bs-target', '#modal_videos')
-    add_iframe_modal("https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn")
 
 }
