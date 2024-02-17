@@ -13,10 +13,6 @@ const buttonSee = document.getElementById('button_see').addEventListener('click'
     add_iframe_modal("https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn")
 })
 
-const closeMovie = document.getElementById('close-movie').addEventListener('click', () => {
-    add_iframe_modal(null, true)
-})
-
 function search_videos_growcast() {
     createElementCard(videos[0].growcast, 'growcast')
 }
@@ -97,6 +93,10 @@ function createElementCard(data_video, id_element) {
         })
     });
 }
+
+const closeMovie = document.getElementById('close-movie').addEventListener('click', () => {
+    add_iframe_modal(null, true)
+})
 
 function add_iframe_modal(link_video, removeIframe) {
     const modal_video = document.getElementById('link_video')

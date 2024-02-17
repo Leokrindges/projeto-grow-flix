@@ -72,6 +72,26 @@
 }
 
 @media(max-width: 576px) {
+    .banner_background {
+        background-size: cover;
+    }
+
+    .text-header {
+        font-size: 20px;
+    }
+
+    .button_assistir {
+        margin-left: 10px;
+        width: 80px;
+        height: 25px;
+        font-size: small;
+        padding: 0;margin-bottom: 15px;
+       }
+
+    .banner_growcast {
+        min-height: 150px;
+    }
+
     .modal_movie {
         height: 250px;
     }
@@ -85,6 +105,27 @@
 }
 
 @media(min-width: 576px) {
+    .banner_background {
+        background-size: cover;
+    }
+
+    .text-header {
+        font-size: 20px;
+    }
+
+    .button_assistir {
+        margin-left: 10px;
+        width: 90px;
+        height: 35px;
+        font-size: medium;
+        padding: 0;
+        margin-bottom: 15px;
+       }
+
+    .banner_growcast {
+        min-height: 250px;
+    }
+
     .modal_movie {
         height: 325px;
     }
@@ -95,6 +136,26 @@
 } 
 
 @media(min-width: 768px){
+    .banner_background {
+        background-size: cover;
+    }
+
+    .text-header {
+        font-size: 45px;
+    }
+
+    .button_assistir {
+        margin-left: 10px;
+        width: 110px;
+        height: 40px;
+        font-size: large;
+        padding: 0;
+        margin-bottom: 35px;
+       }
+
+    .banner_growcast {
+        min-height: 400px;
+    }
     .modal_movie {
         height: 415px;
     }
@@ -106,6 +167,28 @@
 
 
 @media(min-width: 992px){
+
+    .banner_background {
+        background-size: cover;
+    }
+
+    .text-header {
+        font-size: 70px;
+    }
+
+    .button_assistir {
+        margin-left: 10px;
+        width: 110px;
+        height: 40px;
+        font-size: large;
+        padding: 0;
+        margin-bottom: 35px;
+       }
+
+    .banner_growcast {
+        min-height: 575px;
+    }
+
     .modal_movie {
         height: 515px;
     }
