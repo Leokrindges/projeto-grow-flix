@@ -90,9 +90,12 @@ function createElementCard(data_video, id_element) {
             cardBodyDiv.removeChild(svg);
             cardBodyDiv.removeChild(span);
             cardDiv.classList.remove("sobrepor")
+
+            
         })
     });
 }
+
 
 const closeMovie = document.getElementById('close-movie').addEventListener('click', () => {
     add_iframe_modal(null, true)
