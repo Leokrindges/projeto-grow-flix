@@ -97,7 +97,7 @@
     }
 
     .banner_growcast {
-        min-height: 150px;
+        min-height: 180px;
     }
 
     .modal_movie {
@@ -119,7 +119,7 @@
     }
 
     .text-header {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .button_assistir {
@@ -132,7 +132,7 @@
     }
 
     .banner_growcast {
-        min-height: 250px;
+        min-height: 300px;
     }
 
     .modal_movie {
@@ -206,5 +206,69 @@
 
     .modal {
         --bs-modal-width: 900px;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .banner_background {
+        background-size: cover;
+    }
+
+    .text-header {
+        font-size: 70px;
+    }
+
+    .button_assistir {
+        margin-left: 10px;
+        width: 110px;
+        height: 40px;
+        font-size: large;
+        padding: 0;
+        margin-bottom: 35px;
+    }
+
+    .banner_growcast {
+        min-height: 675px;
+    }
+
+    .modal_movie {
+        height: 515px;
+    }
+
+    .modal {
+        --bs-modal-width: 900px;
+    }
+}
+
+@media(min-width: 1400px) {
+
+    .banner_background {
+        background-size: cover;
+    }
+
+    .text-header {
+        font-size: 90px;
+    }
+
+    .button_assistir {
+        margin-left: 10px;
+        width: 200px;
+        height: 80px;
+        font-size: xx-large;
+        padding: 0;
+        margin-bottom: 35px;
+    }
+
+    .banner_growcast {
+        min-height: 820px;
+    }
+
+    .modal_movie {
+        height: 615px;
+    }
+
+    .modal {
+        --bs-modal-width: 1000px;
     }
 }
