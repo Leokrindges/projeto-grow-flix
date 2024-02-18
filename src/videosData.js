@@ -77,7 +77,7 @@ const videos = [
                 title: "Webinar - Recriando o layout do WhatsApp com Flutter",
                 link: "https://www.youtube.com/embed/L1pKoMC6hWk?si=ChRoyM-jnLh1MmuF",
                 image: "https://img.youtube.com/vi/L1pKoMC6hWk/sddefault.jpg"
-            },
+            }
         ],
         jornadaUxUi: [
             {

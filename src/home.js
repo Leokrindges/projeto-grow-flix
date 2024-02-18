@@ -9,8 +9,7 @@ function main() {
 
 // REPRODUZ VIDEO DO CABEÇALHO
 const buttonSee = document.getElementById('button_see').addEventListener('click', () => {
-    console.log("entrou2");
-    add_iframe_modal("https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn")
+    iframe_modal("https://www.youtube.com/embed/7OWT3lfHYvE?si=l5pUjlthbIAHzHBn")
 })
 
 function search_videos_growcast() {
@@ -35,7 +34,7 @@ function createElementCard(data_video, id_element) {
         var colContainer = document.getElementById(`${id_element}`);
 
         var colDiv = document.createElement('div');
-        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center';
+        colDiv.className = 'col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex size_min justify-content-center';
 
         var cardDiv = document.createElement('div');
         cardDiv.className = 'card border border border-0 increase-card';
@@ -50,7 +49,7 @@ function createElementCard(data_video, id_element) {
         cardBodyDiv.setAttribute('data-bs-toggle', 'modal');
         cardBodyDiv.setAttribute('data-bs-target', '#modal_videos')
         cardBodyDiv.addEventListener('click', () => {
-            add_iframe_modal(video.link, false)
+            iframe_modal(video.link, false)
         })
 
         var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -84,24 +83,21 @@ function createElementCard(data_video, id_element) {
             cardBodyDiv.appendChild(svg);
             cardBodyDiv.appendChild(span);
             cardDiv.classList.add("sobrepor")
-
         })
         cardDiv.addEventListener('mouseleave', () => {
             cardBodyDiv.removeChild(svg);
             cardBodyDiv.removeChild(span);
             cardDiv.classList.remove("sobrepor")
-
-            
         })
     });
 }
 
 
 const closeMovie = document.getElementById('close-movie').addEventListener('click', () => {
-    add_iframe_modal(null, true)
+    iframe_modal(null, true)
 })
 
-function add_iframe_modal(link_video, removeIframe) {
+function iframe_modal(link_video, removeIframe) {
     const modal_video = document.getElementById('link_video')
     let modal
 

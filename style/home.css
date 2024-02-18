@@ -57,6 +57,10 @@
     transition-timing-function: ease;
 }
 
+.size_min {
+    min-height: 250px;
+}
+
 @keyframes slide-increase {
     0% {
         width: 16rem;
